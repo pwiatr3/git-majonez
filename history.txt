@@ -1,0 +1,37 @@
+  273  mkdir git-majonez
+  274  cd git-majonez
+  275  touch main.cpp
+  276  git init
+  277  git status
+  278  git add main.cpp 
+  279  git commit . -m"Initial commit"
+  280  git status
+  281  git commit . -m "Farewell changed"
+  282  git status
+  283  git log
+  284  git remote add origin https://github.com/pwiatr3/git-majonez.git
+  285  git push -u origin master
+  286  gitk
+  287  git log
+  288  git checkout -b cs
+  289  git log --oneline
+  290  git reset 3c24dd7
+  291  git log
+  292  git commit . -m "Greetings"
+  293  git push origin cs
+  294  git checkout master
+  295  git merge cs
+  296  cd ..
+  297  cd git-majonez_old/
+  298  ls
+  299  cat history.txt 
+  300  cd ..
+  301  cd git-majonez
+  302  ls
+  303  git status
+  304  git add main.cpp
+  305  git status
+  306  git commit  -m "Merge branch 'cs'"
+  307  gitk
+  308  ls
+  309  history > history.txt
